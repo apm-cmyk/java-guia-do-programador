@@ -19,3 +19,16 @@ public class P0211While {
 	}
 
 }
+
+//Java guia do desenvolvedor
+//Algoritmo em Java - Sandra Purga
+//Arquitetura de software em Java
+//Java Efetivo
+//Front end: angular e spring boot (programação web)
+//JavaFX
+//Programação Android (é o que interessa)
+//Kotlin
+
+
+
+
