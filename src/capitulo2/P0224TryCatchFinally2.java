@@ -5,7 +5,7 @@ import java.io.InputStream;
 
 public class P0224TryCatchFinally2 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 
 		InputStream recurso = null;
 
@@ -13,9 +13,6 @@ public class P0224TryCatchFinally2 {
 		
 		System.out.println("Arquivo "+args[0]+" aberto.");
 		
-		}catch(IOException e1){
-			
-		System.out.println(e1);
 		}
 		finally {
 		
@@ -23,7 +20,7 @@ public class P0224TryCatchFinally2 {
 			recurso.close();
 			System.out.println("Arquivo "+args[0]+" fechado.");
 		
-		}catch (IOException e2) {
+		}catch (IOException e2) {}
 			
 		}
 	}	
