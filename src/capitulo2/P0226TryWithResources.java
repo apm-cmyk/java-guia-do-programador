@@ -10,7 +10,7 @@ public class P0226TryWithResources {
 	 * é declarado antes)
 	 */
 	public static void main(String[] args) {
-	String s1 = "Java - Guia do  Programador";
+	String s1 = "Java - Guia do Programador";
 	processoRecurso(s1);
 	}
 
