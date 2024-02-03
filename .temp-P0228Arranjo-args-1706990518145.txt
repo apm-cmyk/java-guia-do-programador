@@ -1,0 +1,5 @@
+-Dfile.encoding=UTF-8
+-classpath
+"C:\\Users\\anapa\\eclipse-workspace\\estudo-java\\bin"
+-XX:+ShowCodeDetailsInExceptionMessages
+capitulo2.P0228Arranjo
