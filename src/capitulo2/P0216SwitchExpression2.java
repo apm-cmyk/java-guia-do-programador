@@ -20,6 +20,8 @@ public class P0216SwitchExpression2 {
 		
 		};
 		
+		System.out.println(ndias);
+		sc.close();
 	}
 
 }

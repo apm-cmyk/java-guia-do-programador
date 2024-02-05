@@ -34,7 +34,9 @@ public class P0227Assert {
 		
 		System.out.println("soma[1.."+valor+"] = "+soma);
 		
+		sc.close();
 	}
+
 
 	/*para aparecer o asert é preciso ativar com
 	 * java -ea NomePrograma

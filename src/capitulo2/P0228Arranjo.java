@@ -10,7 +10,7 @@ public class P0228Arranjo {
 		/*
 		 * <tipo> [] identificador;
 		 * <tipo> identificado [];
-		 * <tipo>[] identificador = new <tipo>
+		 * <tipo>[] identificador = new <tipo>[dimensao]
 		 * 
 		 * saber o tamanho int d = identificador.length;
 		 * indexação selecionar uma posição do vetor
