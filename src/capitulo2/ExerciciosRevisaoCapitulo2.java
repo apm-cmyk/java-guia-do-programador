@@ -7,7 +7,7 @@ public class ExerciciosRevisaoCapitulo2 {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-
+/*
 		//Exercicio 1
 		//Exercicio 2
 		System.out.printf("Exercicio 2%n");
@@ -46,6 +46,68 @@ public class ExerciciosRevisaoCapitulo2 {
 		
 		System.out.printf("%n area = %f  perimetro = %f",largura*altura,2*(largura+altura));
 	
+		////Exercicio 7
+		System.out.printf("%nExercicio 7%n");
+		double soma=0;
+		int invalido = 0;
+		for (int i=0; i<args.length; i++) {
+			
+			try {
+				soma = Double.parseDouble(args[i]);
+			}catch(NumberFormatException e) {
+				
+				invalido++;
+			}
+			
+		}
+	
+		////Exercicio 8
+		System.out.printf("%nExercicio 7%n");
+		double valorMes = 500;
+		double montante = 50000;
+		double juros = 0.005;
+		int numMes = 0;
+		double acumulado = 0;
+		
+		do {
+		    acumulado = ((1 + juros) * acumulado) + valorMes;
+		    System.out.printf("acumulado = %f qt_mes = %d%n", acumulado, numMes);
+		    numMes++;
+		} while (acumulado < montante);
+	
+		System.out.printf("%ntotal = %f montante = %f qt_mes = %d qt_anos = %d",acumulado,montante,numMes, numMes/12);
+		
+		
+		////Exercicio 9
+		System.out.printf("%nExercicio 9%n");
+		System.out.printf("R = ");
+		double r = sc.nextDouble();
+		System.out.printf("S = ");
+		double s = sc.nextDouble();
+		System.out.printf("T = ");
+		double t = sc.nextDouble();
+		
+		double maior;
+		
+		if (s>r) {
+			maior = s;
+		}else {
+			maior = r;
+		}if(t>maior) {
+			maior = t;
+		}
+		System.out.println("maior = "+maior);
+		*/
+		
+		////Exercicio 13
+		System.out.printf("%nExercicio 13%n");
+		System.out.printf("digite um numero inteiro: ");
+		int n = sc.nextInt();
+		int fatorial = 1;	
+		for (int i=0;i<n;i++) {
+		fatorial = fatorial*(n-i);
+		}
+		System.out.printf("%nfatorial de %d eh = %d",n,fatorial);
 		
 		sc.close();
 	}
