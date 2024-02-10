@@ -10,19 +10,25 @@ public class P0230UsoArrays {
 		//metodos para operação das classes arrays
 		
 		/* 1) metodo fill 
-		 * 	  para preenchmento automatico sem precisar do for
+		 * 	  para preenchimento automatico sem precisar do for
 		 * 2) metodo equals para comparação de duas arrays
 		 * 3) metodo copyOf(nomeArray,numElementos)
 		 * 	  metodo copyOfRange(nomeArray, posicaoInicial, posicaoFinal)
 		 * 	  copyRange = copia de um array a partir de uma posição
 		 *    copyOf = copia completa de uma array 
-		 * 4) metodo toString 
+		 * 4) metodo toString //print do array
 		 * 5) toString, Fill, copyOf e copyOfRange (tem em qualquer derivado do Object)
 		   6) metodo Sort para ordenação de Arrays
 		   	  sort(arranjo) ou sort(arranjo,de, para)
 		   	  o metodo sort a ordenação é ascendente ele usa o
 		   	  algoritmo QuickSort
 		   7) para outros tipos de ordenaçao é usado a interface Comparator<T>
+		
+		 *8) todos esses metodos vc pega diretamente da classe Arrays
+		 *
+		 *uma questão: quando uso o sort diretamento do vetor.equals dá erro 
+		 *tenho que buscar da classe arrays: Arrays.equals(vetor1,vetor2)
+		 *qual a diferença?
 		 */
 		
 		Scanner sc = new Scanner(System.in);
@@ -57,6 +63,8 @@ public class P0230UsoArrays {
 		System.out.println("Arranjo ordenado: "+Arrays.toString(arranjo4));
 		sc.close();
 
+		
+		
 	}
 
 	

@@ -1,5 +1,6 @@
 package capitulo2;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ExerciciosRevisaoCapitulo2 {
@@ -97,7 +98,9 @@ public class ExerciciosRevisaoCapitulo2 {
 			maior = t;
 		}
 		System.out.println("maior = "+maior);
-		*/
+		
+		
+		
 		
 		////Exercicio 13
 		System.out.printf("%nExercicio 13%n");
@@ -110,7 +113,61 @@ public class ExerciciosRevisaoCapitulo2 {
 		System.out.printf("%nfatorial de %d eh = %d",n,fatorial);
 		
 		sc.close();
+		
+		
+		
+		////Exercicio 14
+		System.out.printf("%nExercicio 14%n");
+		System.out.printf("Digite um inteiro N:");	
+		int N1 = sc.nextInt();
+		double soma=0;
+		String texto = "";
+		for (int i=1; i<=N1;i++) {
+			if (i%2==0) {
+				soma -=(1.0/i); //como soma é double para garantir a divisao correta colocar 1.0
+				
+			}else {soma += 1.0/i;}	
+			
+			texto += " "+ soma;
+		}
+		
+		System.out.println(texto);
+		System.out.println("Soma = "+soma);
+		
+		*/
+		
+		
+	////Exercicio 15
+	System.out.printf("%nExercicio 15%n");
+	System.out.printf("Digite um inteiro N:");
+	int N2 = sc.nextInt();
+	int[] vetor1 = new int[N2];
+	int[] vetor2 = new int[N2];
+
+	for (int i=0; i<N2;i++) {
+		System.out.printf("%nDigite o vetor[%d]: ",i);
+		vetor1[i] = sc.nextInt();
 	}
+	
+	vetor2 = Arrays.copyOf(vetor1,vetor1.length); //copia o vetor 
+	Arrays.sort(vetor2); // ordena o vetor
+	
+	System.out.printf("%nVetor original: "+Arrays.toString(vetor1));
+
+	if(Arrays.equals(vetor2,vetor1)) {
+		System.out.printf("%nVetor ordenado!");
+	}else {
+		
+		System.out.printf("%nVetor desordenado!%n");
+		System.out.println("Vetor ordenado: "+Arrays.toString(vetor2));
+	}
+	
+	
+	
+	sc.close();
+	}
+	
+	
 	
 
 }
