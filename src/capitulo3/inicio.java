@@ -13,6 +13,8 @@ public class inicio {
 		
 		obj2.setHorario(2, 60, 44);
 		System.out.println(obj2.toString());
+		
+		
 
 	}
 
