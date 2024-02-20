@@ -39,6 +39,9 @@ public class inicio {
 		P0305Dobro static2 = new P0305Dobro();
 		int num2 = P0305Dobro.getInstancia();
 		System.out.println(num2);
+		
+		
+		
 	}
 
 }
